@@ -66,6 +66,30 @@ Table "public.person"
  gender        | character varying(7)  |           |          |
  date_of_birth | date                  |           |          |
 ```
+
+### Create a table with constraints
+
+```sql
+CREATE TABLE person (
+	id BIGSERIAL NOT NULL PRIMARY KEY, 
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	gender VARCHAR(6) NOT NULL,
+	date_of_birth DATE NOT NULL,
+);
+
+Table "public.person"
+    Column     |          Type          | Collation | Nullable |              Default
+---------------+------------------------+-----------+----------+------------------------------------
+ id            | bigint                 |           | not null | nextval('person_id_seq'::regclass)
+ first_name    | character varying(50)  |           | not null |
+ last_name     | character varying(50)  |           | not null |
+ gender        | character varying(7)   |           | not null |
+ date_of_birth | date                   |           | not null |
+ email         | character varying(150) |           |          |
+Indexes:
+    "person_pkey" PRIMARY KEY, btree (id)
+```
 ## Resources
 [PostgreSQL offical site](https://www.postgresql.org/)
 
