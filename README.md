@@ -45,6 +45,27 @@ CREATE TABLE person {
 	date_of_birth TIMESTAMP,
 }
 ```
+
+### How to view a table
+
+```sql
+\d # describe
+List of relations
+ Schema |  Name  | Type  |  Owner
+--------+--------+-------+----------
+ public | person | table | postgres
+(1 row)
+
+\d person # describe with the table name
+Table "public.person"
+    Column     |         Type          | Collation | Nullable | Default
+---------------+-----------------------+-----------+----------+---------
+ id            | integer               |           |          |
+ first_name    | character varying(50) |           |          |
+ last_name     | character varying(50) |           |          |
+ gender        | character varying(7)  |           |          |
+ date_of_birth | date                  |           |          |
+```
 ## Resources
 [PostgreSQL offical site](https://www.postgresql.org/)
 
