@@ -50,6 +50,8 @@ CREATE TABLE person {
 
 ```sql
 \d # describe
+\dt # shows just the tables
+
 List of relations
  Schema |  Name  | Type  |  Owner
 --------+--------+-------+----------
