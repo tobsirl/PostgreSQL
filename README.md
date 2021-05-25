@@ -90,6 +90,17 @@ Table "public.person"
 Indexes:
     "person_pkey" PRIMARY KEY, btree (id)
 ```
+
+### Insert data
+
+```sql
+INSERT INTO person (
+first_name,
+last_name,
+gender,
+date_of_birth)
+VALUES ('Anne', 'Smith', 'FEMALE', DATE '1988-01-09');
+```
 ## Resources
 [PostgreSQL offical site](https://www.postgresql.org/)
 
