@@ -103,6 +103,12 @@ gender,
 date_of_birth)
 VALUES ('Anne', 'Smith', 'FEMALE', DATE '1988-01-09');
 ```
+
+### Importing data
+
+```sql
+\i filename # this will import all the data from an sql file
+```
 ## Resources
 [PostgreSQL offical site](https://www.postgresql.org/)
 
