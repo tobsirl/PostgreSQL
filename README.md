@@ -117,7 +117,12 @@ SELECT first_name FROM person;
 SELECT first_name, last_name FROM person;
 ```
 
+### Order the data that's returned
 
+```sql
+SELECT * FROM person ORDER BY last_name ASC;
+SELECT country_of_birth FROM person ORDER BY country_of_birth DESC;
+```
 ## Resources
 [PostgreSQL offical site](https://www.postgresql.org/)
 
