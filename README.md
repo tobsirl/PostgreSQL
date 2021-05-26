@@ -109,6 +109,15 @@ VALUES ('Anne', 'Smith', 'FEMALE', DATE '1988-01-09');
 ```sql
 \i filename # this will import all the data from an sql file
 ```
+### Reading data from the table
+
+```sql
+SELECT * FROM person;
+SELECT first_name FROM person;
+SELECT first_name, last_name FROM person;
+```
+
+
 ## Resources
 [PostgreSQL offical site](https://www.postgresql.org/)
 
