@@ -128,6 +128,13 @@ SELECT country_of_birth FROM person ORDER BY country_of_birth DESC;
 ```sql
 SELECT DISTINCT country_of_birth FROM person ORDER BY country_of_birth;
 ```
+
+### Using the WHERE clause
+
+```sql
+SELECT * FROM person WHERE gender = 'Female';
+SELECT * FROM person WHERE gender = 'Male' AND country_of_birth = 'China';
+```
 ## Resources
 [PostgreSQL offical site](https://www.postgresql.org/)
 
