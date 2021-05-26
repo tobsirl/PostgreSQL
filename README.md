@@ -123,6 +123,11 @@ SELECT first_name, last_name FROM person;
 SELECT * FROM person ORDER BY last_name ASC;
 SELECT country_of_birth FROM person ORDER BY country_of_birth DESC;
 ```
+### Unique Values using DISTINCT
+
+```sql
+SELECT DISTINCT country_of_birth FROM person ORDER BY country_of_birth;
+```
 ## Resources
 [PostgreSQL offical site](https://www.postgresql.org/)
 
