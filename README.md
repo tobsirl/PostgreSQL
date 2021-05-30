@@ -141,10 +141,18 @@ SELECT * FROM person WHERE gender = 'Male' AND country_of_birth = 'China';
 ```sql
 > greater than
 < less than
->=
-<=
+>= greater than or equal
+<= less than or equal
 = equal 
 <> not equal
+```
+
+### Limit, Offset & Fetch
+
+```sql
+SELECT * FROM person LIMIT 10; # Limit the number of records returned
+SELECT * FROM person OFFSET 10 LIMIT 10; # Offset the first 10 rows
+SELECT * FROM person OFFSET 10 FETCH FIRST 10 ROW ONLY; # Using FETCH
 ```
 
 
