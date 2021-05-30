@@ -135,6 +135,20 @@ SELECT DISTINCT country_of_birth FROM person ORDER BY country_of_birth;
 SELECT * FROM person WHERE gender = 'Female';
 SELECT * FROM person WHERE gender = 'Male' AND country_of_birth = 'China';
 ```
+
+### Comparison Operators
+
+```sql
+> greater than
+< less than
+>=
+<=
+= equal 
+<> not equal
+```
+
+
+
 ## Resources
 [PostgreSQL offical site](https://www.postgresql.org/)
 
